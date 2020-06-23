@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context=".MainfourActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/cardview_shadow_start_color"
+            app:cardElevation="150dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/textView2"
+
+        style="@style/viewParent.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:text="อุปกรณ์ในการเลี้ยงปลากัด\n
+1.โหล\n
+2.ใบหูกวาง(ใบแห้งและสมบูรณ์)\n"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+            <ImageView
+                android:id="@+id/imageViewtt1"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+
+
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:visibility="visible"
+
+                app:srcCompat="@drawable/t1" />
+
+            <ImageView
+                android:id="@+id/imageViewtt2"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="200dp"
+
+
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:visibility="visible"
+
+                app:srcCompat="@drawable/t2" />
+
+            <TextView
+                android:id="@+id/textView3"
+
+                style="@style/viewParent.Text"
+                android:layout_width="match_parent"
+
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:text="อาหาร\n
+อาหารปลากัดควรเป็นอาหารสดแต่ถ้าหาไม่ได้ก็อาหารเม็ด แต่อาหารเม็ดนั้นควรไม่ให้ปลากัดกินบ่อยเกินไปเพราะปลาจะเบื่อเร็ว เพราะฉะนั้นควรหาอาหารสดให้กินบ้าง อาหารสดควรทำความสะอาดให้ดีโดยล้างด้วยด่างทับทิม"
+                />
+
+            <TextView
+        android:id="@+id/textView4"
+
+        style="@style/viewParent.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="าิธีการเลี้ยง\n
+1)เตรียมน้ำใส่โหลไว้ประมาณ3/4ของโหล เพื่อป้องกันปลาโดด และป้องกันศัตรูที่อาจจะจับกินปลา\n
+2)ทิ้งน้ำวัน 1-2 คืน ให้คลอรีนระเหย จึงนำปลามาปรับอุณหภูมิกับน้ำในโหล โดยล่องถุงปลาที่ชื้อมาลอยไปกับน้ำในโหลที่เตรียมไว้ทิ้งไว้สัก 15-20นาทีเพื่อให้ปลาปรับสภาพจากนั้นเทปลาลงโหลได้เลย\n
+3)ควรเปลี่ยนน้ำอย่างน้อยอาทิตย์ละ 2 ครั้ง ควรใส่ใบหูกวางเพื่อกันปลาป่วยและปลาเป็นโรค\n"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

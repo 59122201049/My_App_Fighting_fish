@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/cardview_shadow_start_color"
+        app:cardElevation="150dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main" />
+        <TextView
+            style="@style/viewParent.headerText"
+            android:text="ความสำคัญและความเป็นมา"
+            android:gravity="center"
+            android:layout_marginTop="155dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    <TextView
+        style="@style/viewParent.Text"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="175dp"
+
+        android:text="           ปลากัดเป็นปลาพื้นบ้านของไทย  ในธรรมชาติชอบอาศัยอยู่ในแหล่งน้ำนิ่ง  เช่น หนอง   บึง   หรือชายทุ่งนา ปลากัด หรือ เบ็ตต้า (ชื่อทางวิทยาศาสตร์ Betta splendens) ได้ชื่อมาจากนักรบเอเชียโบราณ เบ็ตตาช(Bettah) เพราะการต่อสู้อันดุเดือดของมัน ได้ให้ชื่อโดย ซี.เท็ด เรแกน ในปี พ.ศ.2452 การกัดปลานั้นเป็นกีฬาที่มีชื่อเสียงตั้งแต่อดีต มีบ่อนกัดปลาเพื่อใช้เป็นเครื่องมือเก็บภาษี นอกจากนั้นยังมีหลักฐานการนำปลากัดไทยไปเลี้ยงในต่างประเทศ ปัจจุบันปลากัดไทยนั้นไม่ได้เป็นเพียงแค่ สวยงาม แต่ยังเป็น ปลาเศรษฐกิจ ให้กับประเทศไทยอีกด้วย เมื่อวันที่ 5 กุมภาพันธ์ 2562 คณะรัฐมนตรี ได้พิจารณาให้ปลากัดไทยเป็นสัตว์น้ำประจำชาติ โดยพิจารณาองค์ประกอบสำคัญ 3 มิติ ด้านวัฒนธรรมและประวัติศาสตร์ ด้านความเป็นเจ้าของมีความเอกลักษณ์เฉพาะตัว ด้านการค้าเชิงพาณิย์
+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"></TextView>
+</androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
